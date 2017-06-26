@@ -81,7 +81,7 @@ class RomController extends Controller
             return ["status" => "error", "message"=>"Failed to build ROM.\n".$result['output'], "data"=>$result['output']];
         }
         $rom->refresh();
-        return ["status"=>"success","message"=>"Build successful.Click Download Button",  "data" =>["rom" => $rom, "output" =>$result['output']]] ;
+        return ["status"=>"success","message"=>"Click Download Button to get your ROM",  "data" =>["rom" => $rom, "output" =>$result['output']]] ;
     }
 
     /**
