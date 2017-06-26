@@ -16,7 +16,7 @@
                 </vue-core-image-upload>
                 <button v-else class="btn btn-warning"  @click="start_over()">Start Over</button>
                 <a :href="download_path" class="btn btn-success" v-if="download">Download</a>
-                <button class="btn btn-success" v-else @click="build()">ROMify</button>
+                <button class="btn btn-success" v-else @click="build()">Build</button>
 
         </div>
         <div class="row">
@@ -24,7 +24,7 @@
                 <ul class="list-group sorted_list">
                     <li class="list-group-item media img-list"  v-for="item in rom_images" :data-id="item.id" :key="item.formatted_name" >
                         <a class="media-left" href="#">
-                            <img class="media-object img-thumb" :src="https://item.image_path" :alt="item.formatted_name">
+                            <img class="media-object img-thumb" :src="item.image_path" :alt="item.formatted_name">
                             <!--<img class="media-object"  src="img/avatar-ecma.png" alt="Responsive image"/>-->
                         </a>
                         <div class="media-body">
@@ -132,6 +132,10 @@
         position: absolute;
         opacity: 0.5;
         z-index: 2000;
+    }
+
+    ul.sorted_list {
+    list-style-type: none;
     }
 
     ul.sorted_list li.placeholder {
