@@ -1,10 +1,10 @@
 <template>
     <div class="container">
-        <div v-html="rawHtml" class="text-center">
-            <div class="row" style="margin-bottom: 10px">
-            <p>Welcome to the Game Boy ROM Generator by <a href="https://yokoi.shop">Yokoi</a> where you can turn your images into Game Boys ROM files. Creating carts with your custom graphics has never been easier.</p>
-            <p>The images (you can upload up to 256 of them) need to be exactly PNGS that are 160x144 pixels with no more than 4 colors/shades of gray. </p>
-            <p>This site is based off the work of <a href="http://blog.gg8.se/wordpress">Nitro</a> and makes use of the script he wrote <a href="http://blog.gg8.se/wordpress/2013/02/19/gameboy-project-week-7-a-rom-for-showing-custom-graphics/">here</a>.
+        <div class="text-center">
+            <div v-html="rawHtml" class="row" style="margin-bottom: 10px">
+            <p v-html="rawHtml">Welcome to the Game Boy ROM Generator by <a href="https://yokoi.shop">Yokoi</a> where you can turn your images into Game Boys ROM files. Creating carts with your custom graphics has never been easier.</p>
+            <p v-html="rawHtml">The images (you can upload up to 256 of them) need to be exactly PNGS that are 160x144 pixels with no more than 4 colors/shades of gray. </p>
+            <p v-html="rawHtml">This site is based off the work of <a href="http://blog.gg8.se/wordpress">Nitro</a> and makes use of the script he wrote <a href="http://blog.gg8.se/wordpress/2013/02/19/gameboy-project-week-7-a-rom-for-showing-custom-graphics/">here</a>.
             </div>
             <div class="row" style="margin-bottom: 10px">
                 <vue-core-image-upload  v-if="!reset"
@@ -20,8 +20,8 @@
                         url="/rom/" >
                 </vue-core-image-upload>
                 <button v-else class="btn btn-warning"  @click="start_over()">Start Over</button>
-                <a :href="download_path" class="btn btn-success" v-if="download" >Download Build</a>
-                <button class="btn btn-success" v-else @click="build()">Build</button>
+                <a :href="download_path" class="btn btn-success" v-if="download" >Download</a>
+                <button class="btn btn-success" v-else @click="build()">ROMify</button>
 
             </div>
 
