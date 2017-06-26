@@ -33403,7 +33403,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     }, [_c('img', {
       staticClass: "media-object img-thumb",
       attrs: {
-        "src": 'https://' + item.image_path,
+        "src": item.image_path,
         "alt": item.formatted_name
       }
     })]), _vm._v(" "), _c('div', {

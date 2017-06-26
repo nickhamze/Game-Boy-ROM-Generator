@@ -16,7 +16,7 @@ class RomImage extends Model
 
     public function getImagePathAttribute()
     {
-        return asset(Storage::url($this->name));
+        return secure_asset(Storage::url($this->name));
     }
     public function getLocalPathAttribute()
     {
