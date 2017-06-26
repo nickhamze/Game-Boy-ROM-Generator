@@ -20,6 +20,10 @@ body {
   margin: 0;
 }
 
+.list-group {
+    list-style-type: none!important;
+}
+
 article,
 aside,
 details,
