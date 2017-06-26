@@ -44,8 +44,8 @@
         </nav>
         @yield('content')
         <div class="container">
-          <div class=".col-xs-4">
-        <p>Welcome to the Game Boy ROM Generator by <a href="https://yokoi.shop">Yokoi</a> where you can turn your images into Game Boys ROM files. Creating carts with your custom graphics has never been easier.</p>
+          <div class="col-md-6 .col-md-offset-3">
+        <p>Welcome to the Game Boy ROM Generator by <a href="https://yokoi.shop">Yokoi</a> where you can turn your images into Game Boy ROM files. Creating carts with your custom graphics has never been easier.</p>
         <p>The images (you can upload up to 256 of them) need to be exactly PNGS that are 160x144 pixels with no more than 4 colors/shades of gray.</p>
         <p>This site is based off the work of <a href="http://blog.gg8.se/wordpress">Nitro</a> and makes use of the script he wrote <a href="http://blog.gg8.se/wordpress/2013/02/19/gameboy-project-week-7-a-rom-for-showing-custom-graphics/">here</a>.</p>
           </div>
