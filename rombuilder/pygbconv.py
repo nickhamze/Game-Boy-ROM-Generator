@@ -64,9 +64,7 @@ def convimg(name):
     # Exit or warn if the number of colors isn't exactly 4
     if len(colors) > 4:
         print (
-        "Image must contain no more than 4 unique colors. Found the following colors {}. Do not "
-		"use a file format that would destroy 4 color images such as JPEG. PNG, GIF and BMP (with "
-		"any color depth) are ey-ok.".format(
+        "Image must contain no more than 4 unique colors. Found the following colors {}.".format(
             hex_colors))
         exit(1)
     elif len(colors) < 4:
