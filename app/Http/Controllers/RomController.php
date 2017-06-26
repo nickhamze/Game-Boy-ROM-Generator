@@ -56,7 +56,7 @@ class RomController extends Controller
             ]);
         }
         $rom->refresh();
-        return ["status"=>"success", "message" => "Images successfully uploaded",  "data" =>$rom];
+        return ["status"=>"success", "message" => "Images uploaded successfully",  "data" =>$rom];
     }
 
     function build(Rom $rom, Request $request){
