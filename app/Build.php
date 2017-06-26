@@ -15,6 +15,6 @@ class Build extends Model
 
     public function getDownloadPathAttribute()
     {
-        return asset(Storage::url('public/rom_builds/'.$this->build_version));
+        return secure_asset(Storage::url('public/rom_builds/'.$this->build_version));
     }
 }
