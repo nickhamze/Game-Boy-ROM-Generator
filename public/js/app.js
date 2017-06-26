@@ -33375,7 +33375,7 @@ module.exports={render:function (){var _vm=this;var _h=_vm.$createElement;var _c
     attrs: {
       "href": _vm.download_path
     }
-  }, [_vm._v("Download Build")]) : _c('button', {
+  }, [_vm._v("Download")]) : _c('button', {
     staticClass: "btn btn-success",
     on: {
       "click": function($event) {
