@@ -1,6 +1,6 @@
 <template>
     <div class="container">
-        <div class="text-center">
+        <div v-html="rawHtml" class="text-center">
             <div class="row" style="margin-bottom: 10px">
             <p>Welcome to the Game Boy ROM Generator by <a href="https://yokoi.shop">Yokoi</a> where you can turn your images into Game Boys ROM files. Creating carts with your custom graphics has never been easier.</p>
             <p>The images (you can upload up to 256 of them) need to be exactly PNGS that are 160x144 pixels with no more than 4 colors/shades of gray. </p>
