@@ -134,7 +134,7 @@
         z-index: 2000;
     }
 
-    ul.sorted_list {
+    .list-group {
     list-style-type: none;
     }
 
