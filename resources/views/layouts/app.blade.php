@@ -23,15 +23,6 @@
         <nav class="navbar navbar-default navbar-static-top">
             <div class="container">
                 <div class="navbar-header">
-
-                    <!-- Collapsed Hamburger -->
-                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#app-navbar-collapse">
-                        <span class="sr-only">Toggle Navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
                     <!-- Branding Image -->
                     <a class="navbar-brand" href="{{ url('/') }}">
                         Game Boy ROM Generator
@@ -49,9 +40,9 @@
         @yield('content')
         <div class="container">
           <div class="col-md-6 col-md-offset-3">
-        <p>Welcome to the Game Boy ROM Generator by <a href="https://yokoi.shop">Yokoi</a> where you can turn your images into Game Boy ROM files. Creating carts with custom graphics has never been easier.</p>
-        <p>The images need to be PNGs that are 160x144px with no more than 4 colors/shades of gray.</p>
-        <p>Once you upload the images you can drag and drop them in any order that you like.</p>
+        <p>Creating Game Boy carts with custom graphics has never been easier thanks to the ROM generator by <a href="https://yokoi.shop">Yokoi</a></p>
+        <p>The images need to be PNGs that are 160x144px.</p>
+        <p>Once you upload the images you can drag and drop them into any order you like.</p>
         <p>This app is based off the work of <a href="http://blog.gg8.se/wordpress">Nitro</a> and makes use of this <a href="http://blog.gg8.se/wordpress/2013/02/19/gameboy-project-week-7-a-rom-for-showing-custom-graphics/">script</a>.</p>
           </div>
         </div>
