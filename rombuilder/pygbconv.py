@@ -47,7 +47,7 @@ def convimg(name):
         exit(1)
 
     # Convert the image to RGB
-    img = img.convert('RGB',dither=None)
+    img = img.convert('RGB',dither=None, colors=256)
     pixels = img.getdata()
     colors = []
     hex_colors = []
