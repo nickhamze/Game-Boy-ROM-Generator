@@ -64,7 +64,8 @@
                 }
                 new Noty({
                     type: res.status,
-                    text: res.message
+                    text: res.message,
+                    killer: true
                 }).show();
             },
             initsort(){
@@ -88,13 +89,15 @@
                         }
                         new Noty({
                             type: resp.data.status,
-                            text: resp.data.message
+                            text: resp.data.message,
+                            killer: true
                         }).show();
                     });
                 }else{
                     new Noty({
                         type: 'info',
-                        text: 'Please upload images first'
+                        text: 'Please upload images first',
+                        killer: true
                     }).show();
                 }
 
