@@ -42,11 +42,14 @@ def convimg(name):
     w = img.size[0]
     h = img.size[1]
 
+    if (w != 160 or h != 144):
+        print ("Image must be exactly 160x144px")
+        exit(1)
+
     # Convert the image to RGB
     img = img.convert('RGB')
     img = img.convert('P', palette=Image.ADAPTIVE, colors=4)
     img = img.convert('RGB')
-    img = img.resize(160,144)
     pixels = img.getdata()
     colors = []
     hex_colors = []
