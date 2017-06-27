@@ -41,7 +41,7 @@
         <div class="container">
           <div class="col-md-6 col-md-offset-3">
         <p>Creating Game Boy carts with custom graphics has never been easier.</p>
-        <p>Images need to PNGs that 160px by 144px and contain less than 4 colors. </p>
+        <p>Images need to PNGs that are 160px by 144px and contain less than 4 colors.</p>
         <p>Once you upload the images you can drag and drop them into any order you like.</p>
         <p>This app was created by <a href="https://yokoi.shop">Yokoi</a> and is based off Nitro's amazing <a href="http://blog.gg8.se/wordpress/2013/02/19/gameboy-project-week-7-a-rom-for-showing-custom-graphics/">script</a>.</p>
           </div>
