@@ -43,7 +43,7 @@ def convimg(name):
     h = img.size[1]
 
     if (w != 160 or h != 144):
-        print ("Image must be exactly 160*144 big")
+        print ("Image must be exactly 160x144px")
         exit(1)
 
     # Convert the image to RGB
