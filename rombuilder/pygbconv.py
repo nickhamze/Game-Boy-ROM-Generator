@@ -50,6 +50,7 @@ def convimg(name):
     img = img.convert('RGB')
     img = img.convert('P', palette=Image.ADAPTIVE, colors=4)
     img = img.convert('RGB')
+    img = img.resize(160,144)
     pixels = img.getdata()
     colors = []
     hex_colors = []
