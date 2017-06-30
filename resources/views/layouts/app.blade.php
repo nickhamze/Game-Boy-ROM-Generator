@@ -15,6 +15,7 @@
     <title>Game Boy ROM Generator by Yokoi</title>
 
     <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/noty.css') }}" rel="stylesheet">
 </head>
 <body>
