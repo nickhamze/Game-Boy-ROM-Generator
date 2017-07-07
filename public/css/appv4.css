@@ -255,6 +255,7 @@ ul.sorted_list li.placeholder:before {
 }
 img.img-thumb{
     width: 80px;
+    height: inherit!important;
 }
 
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
