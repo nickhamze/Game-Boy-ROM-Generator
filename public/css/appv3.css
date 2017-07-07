@@ -231,6 +231,32 @@ th {
   padding: 0;
 }
 
+body.dragging, body.dragging * {
+    cursor: move !important;
+}
+
+.dragged {
+    position: absolute;
+    opacity: 0.5;
+    z-index: 2000;
+}
+
+.list-group {
+list-style-type: none;
+}
+
+ul.sorted_list li.placeholder {
+    position: relative;
+    /** More li styles **/
+}
+ul.sorted_list li.placeholder:before {
+    position: absolute;
+    /** Define arrowhead **/
+}
+img.img-thumb{
+    width: 80px;
+}
+
 /*! Source: https://github.com/h5bp/html5-boilerplate/blob/master/src/css/main.css */
 
 @media print {
