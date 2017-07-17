@@ -174,10 +174,10 @@ def gbglobalchecksum(r):
 
 def gbromfix(romdata):
     # Calculate header value for the ROM size
-    romsize = 32768
+    romsize = int(ceil(log(len(romdata), 32768)))
 
     # Restore target size that the ROM should be padded up to
-    targetsize = 32768
+    targetsize = 32768 << romsize
 
     # How many bytes are missing
     missingbytes = targetsize - len(romdata)
