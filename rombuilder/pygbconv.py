@@ -177,7 +177,7 @@ def gbromfix(romdata):
     romsize = int(ceil(log(len(romdata), 32768)))
 
     # Restore target size that the ROM should be padded up to
-    targetsize = 32768 << romsize
+    targetsize = 32768
 
     # How many bytes are missing
     missingbytes = targetsize - len(romdata)
