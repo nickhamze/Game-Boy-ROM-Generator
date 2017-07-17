@@ -189,8 +189,7 @@ def gbromfix(romdata):
     romdata = list(romdata)
     print len(romdata[0])
     #
-    romdata[0x148] = chr(romsize)  # ROM size header value
-
+    
     romdata[0x14d] = gbheaderchecksum(romdata)  # Header checksum
 
     romdata[0x14e:0x150] = dw(0)  # Zero out global checksum
