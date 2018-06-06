@@ -23,9 +23,9 @@ class UploadRequest extends FormRequest
      */
     public function rules()
     {
-        $rules = [
-        ];
-        $rom_images = count($this->input('rom_images'));
+       $rules = [];
+        $request = $this->instance()->all();
+        $rom_images = count($request['rom_images']);
         foreach(range(0, $rom_images) as $index) {
             $rules['rom_images.' . $index] = 'image|mimes:jpeg,bmp,png|';
         }
